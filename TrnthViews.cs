@@ -2,8 +2,8 @@
 using System.Collections;
 [ExecuteInEditMode]
 public class TrnthViews : TrnthMonoBehaviour {
-	public int width;
-	public int height;
+	public int width=640;
+	public int height=1136;
 	[ContextMenu ("execute")]
 	public void execute(){
 		foreach(Transform e in transform){
