@@ -4,6 +4,7 @@ using System.Collections;
 public class TrnthViews : TrnthMonoBehaviour {
 	public int width=640;
 	public int height=1136;
+	public Transform lookAt;
 	[ContextMenu ("execute")]
 	public void execute(){
 		foreach(Transform e in transform){
@@ -16,5 +17,10 @@ public class TrnthViews : TrnthMonoBehaviour {
 			// widget.drawRegion=vec;
 			// Debug.Log("ddd");
 		}
+	}
+	[ContextMenu ("look")]
+	public void look(){
+		if(!lookAt)return;
+		pos-=lookAt.position;
 	}
 }
