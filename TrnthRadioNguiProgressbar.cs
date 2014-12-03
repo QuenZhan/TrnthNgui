@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TrnthRadioProgressbar : TrnthRadio {
+public class TrnthRadioNguiProgressbar : TrnthRadio {
 	public UIProgressBar bar;
 	public string uiProgressBar;
 	// Update is called once per frame
