@@ -8,6 +8,6 @@ public class TrnthQualitySlider : TrnthQuality {
 		setQuality(index);
 	}
 	void OnEnable(){
-		slider.value=QualitySettings.GetQualityLevel()/6;
+		slider.value=QualitySettings.GetQualityLevel()/6f;
 	}
 }
