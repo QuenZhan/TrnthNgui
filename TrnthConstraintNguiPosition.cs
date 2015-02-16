@@ -7,7 +7,8 @@ public class TrnthConstraintNguiPosition : TrnthConstraint {
 	public override void update(){
 		base.update();
 		if(!alignTo){
-			Destroy(this);
+			// Destroy(this);
+			enabled=false;
 			return;
 		}
 		var coor=Camera.main.WorldToScreenPoint(alignTo.position);
